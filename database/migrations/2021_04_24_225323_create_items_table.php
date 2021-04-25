@@ -14,7 +14,7 @@ class CreateItemsTable extends Migration {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->boolean('complete')->default(false);
+            $table->boolean('completed')->default(false);
             $table->timestamp('completed_at')->nullable();
             $table->timestamps();
         });
